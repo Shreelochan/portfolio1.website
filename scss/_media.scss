@@ -1,0 +1,129 @@
+@media (max-width:800px){
+    #header-home{
+        height:30rem;
+
+        .header-content{
+            padding-top:5rem;
+
+            h1,.text-type{
+                font-size: 2.3rem;
+            }
+        }
+    }
+}
+@media (max-width:1024px){
+    #header-home{
+        height:50rem;
+        .header-content{
+            padding-top:15rem;
+        }
+}
+}
+@media (max-width:500px){
+    #main-nav{
+        flex-direction: column;
+        align-items: center;
+
+        li{
+            padding-bottom:2rem;
+        }
+    }
+    #header {
+        &-home{
+            height:30rem;
+
+            .header-content{
+               // display:none;
+                padding-top:5rem;
+                
+                h1,.text-type{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    #home-a .specials,
+    #home-b .stats,
+    #home-c .process,
+    #about-d .testimonials,
+    .items,#contact-b .contact-info{
+        grid-template-columns: 1fr;
+    }
+    #contact-b .contact-info div,#home-a .specials div{
+        border-bottom: 1px solid $main-color;
+        margin:1rem;
+    }
+    #home-b .stats div{
+        padding:2rem 0 1rem 0;
+    }
+    //about
+    #about{
+        &-a {
+            .about-info{
+                grid-template-areas: 
+                'bioimage'
+                'bio'
+                'aw1'
+                'aw2'
+                'aw3'
+            }
+        }
+        &-c{
+            display:none;
+        }
+    }
+    //contact
+    #contact{
+        &-a{
+            .text-field{
+                grid-template-areas:
+                'name' 
+                'subject'
+                'email'
+                'phone'
+                'message';
+
+                .text-input{
+                    margin:0.75rem;       
+                }
+            
+            }
+        }
+    }
+    //fotter
+    #main-footer{
+        height:7rem;
+
+        .footer-content{
+            flex-direction: column;
+            padding: 1rem;
+            height:5rem;
+        }
+    }
+    
+}
+@media (max-height:450px){
+    #main-nav{
+        flex-direction: column;
+        align-items: center;
+
+        li{
+            padding:1rem;
+        }
+    }
+    #header {
+        &-home{
+            height:30rem;
+
+            .header-content{
+               // display:none;
+                padding-top:3rem;
+                
+                h1,.text-type{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+}
